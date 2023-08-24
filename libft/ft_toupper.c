@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minitalk.h                                         :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wrikuto <wrikuto@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/21 19:36:50 by wrikuto           #+#    #+#             */
-/*   Updated: 2023/08/24 20:23:05 by wrikuto          ###   ########.fr       */
+/*   Created: 2023/05/21 17:01:22 by wrikuto           #+#    #+#             */
+/*   Updated: 2023/06/05 12:14:01 by wrikuto          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALK_H
-# define MINITALK_H
+#include"libft.h"
 
-# include "./libft/libft.h"
-# include "./ft_printf/ft_printf.h"
-# include <unistd.h>
-# include <stdlib.h>
-# include <signal.h>
-# include <stdint.h>
-// # include <>
+int	ft_toupper(int c)
+{
+	if ('a' <= c && c <= 'z')
+		c = c - 32;
+	return (c);
+}
 
-
-
-#endif
+// #include<stdio.h>
+// int main() 
+// 	char c = 'a';
+// 	int result = ft_toupper(c);
+// 	printf("Original character: %c\n", c);
+// 	printf("Uppercase character: %c\n", result);
+// 	return 0;
+// }

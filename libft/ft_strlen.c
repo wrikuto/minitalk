@@ -1,26 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minitalk.h                                         :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wrikuto <wrikuto@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/21 19:36:50 by wrikuto           #+#    #+#             */
-/*   Updated: 2023/08/24 20:23:05 by wrikuto          ###   ########.fr       */
+/*   Created: 2023/05/21 14:06:39 by wrikuto           #+#    #+#             */
+/*   Updated: 2023/06/04 22:31:56 by wrikuto          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALK_H
-# define MINITALK_H
+#include"libft.h"
 
-# include "./libft/libft.h"
-# include "./ft_printf/ft_printf.h"
-# include <unistd.h>
-# include <stdlib.h>
-# include <signal.h>
-# include <stdint.h>
-// # include <>
+size_t	ft_strlen(const char *s)
+{
+	size_t	i;
 
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
+}
 
+// #include<stdio.h>
+// int main(void)
+// {
+// 	int len;
+// 	char s[] = "today";
 
-#endif
+// 	len = ft_strlen(s);
+// 	printf("\"%s\" は %d 文字\n", s, len);
+
+// 	printf("\"%s\" は %zu 文字\n", "hello world", ft_strlen("hello world"));
+
+// 	return 0;
+// }

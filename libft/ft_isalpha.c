@@ -1,32 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   server.c                                           :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wrikuto <wrikuto@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/24 12:30:31 by wrikuto           #+#    #+#             */
-/*   Updated: 2023/08/24 22:26:46 by wrikuto          ###   ########.fr       */
+/*   Created: 2023/05/20 19:12:19 by wrikuto           #+#    #+#             */
+/*   Updated: 2023/06/03 17:37:43 by wrikuto          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "minitalk.h"
+#include"libft.h"
 
-void	built_and_print(int signal)
+int	ft_isalpha(int n)
 {
-	static	unsigned char	c = 0;
-	static					i = 0;
-
-	if (signal == SIGUSR1)
-		c = c & 0b1
-}
-
-int	main(void)
-{
-	ft_printf("PID: %d\n", getpid());
-	while (1)
-	{
-		
-	}
+	if (('A' <= n && n <= 'Z') || ('a' <= n && n <= 'z'))
+		return (1);
 	return (0);
 }
+
+// #include <stdio.h>
+// int main() {
+//     char c1 = 'a';
+//     char c2 = '1';
+//     char c3 = '!';
+//     printf("isalnum('a') = %d\n", ft_isalpha(c1));
+//     printf("isalnum('1') = %d\n", ft_isalpha(c2));
+//     printf("isalnum('!') = %d\n", ft_isalpha(c3));
+//     return 0;
+// }

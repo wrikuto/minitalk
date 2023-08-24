@@ -1,26 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minitalk.h                                         :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wrikuto <wrikuto@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/21 19:36:50 by wrikuto           #+#    #+#             */
-/*   Updated: 2023/08/24 20:23:05 by wrikuto          ###   ########.fr       */
+/*   Created: 2023/06/02 18:28:43 by wrikuto           #+#    #+#             */
+/*   Updated: 2023/06/05 00:23:57 by wrikuto          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALK_H
-# define MINITALK_H
+#include"libft.h"
 
-# include "./libft/libft.h"
-# include "./ft_printf/ft_printf.h"
-# include <unistd.h>
-# include <stdlib.h>
-# include <signal.h>
-# include <stdint.h>
-// # include <>
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+{
+	char	*res;
+	size_t	i;
 
-
-
-#endif
+	if (s == NULL || f == NULL)
+		return (NULL);
+	i = 0;
+	res = ft_strdup(s);
+	if (res == NULL)
+		return (NULL);
+	while (res[i] != '\0')
+	{
+		res[i] = (*f)(i, res[i]);
+		i++;
+	}
+	return (res);
+}
