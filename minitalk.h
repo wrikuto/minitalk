@@ -6,7 +6,7 @@
 /*   By: wrikuto <wrikuto@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/21 19:36:50 by wrikuto           #+#    #+#             */
-/*   Updated: 2023/08/24 20:23:05 by wrikuto          ###   ########.fr       */
+/*   Updated: 2023/08/26 00:23:40 by wrikuto          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,5 @@
 # include <stdlib.h>
 # include <signal.h>
 # include <stdint.h>
-// # include <>
-
-
 
 #endif
