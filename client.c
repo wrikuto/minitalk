@@ -6,7 +6,7 @@
 /*   By: wrikuto <wrikuto@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 12:30:53 by wrikuto           #+#    #+#             */
-/*   Updated: 2023/08/24 22:26:04 by wrikuto          ###   ########.fr       */
+/*   Updated: 2023/08/25 22:55:35 by wrikuto          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	send_signal(int pid, char *str)
 int	main(int argc, char **argv)
 {
 	if (argc == 3)
-		send_signal(ft_atoi(argv[2]), argv[3]);
+		send_signal(ft_atoi(argv[2]), argv[2]);
 	else
 	{
 		ft_printf("Invalid arg. \nFormat: [./client PID \"STRING\"]\n");

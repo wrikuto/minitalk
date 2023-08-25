@@ -6,7 +6,7 @@
 /*   By: wrikuto <wrikuto@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/16 14:13:16 by wrikuto           #+#    #+#             */
-/*   Updated: 2023/06/22 18:03:25 by wrikuto          ###   ########.fr       */
+/*   Updated: 2023/08/25 22:47:12 by wrikuto          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static	unsigned int	ft_power(unsigned int base, unsigned int exp)
 	unsigned int	result;
 
 	result = 1;
-	if (base == 0 && exp < 0)
+	if (base == 0 && exp > 0)
 		return (0);
 	else
 	{

@@ -6,7 +6,7 @@
 /*   By: wrikuto <wrikuto@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 21:18:19 by wrikuto           #+#    #+#             */
-/*   Updated: 2023/06/03 20:29:05 by wrikuto          ###   ########.fr       */
+/*   Updated: 2023/08/25 22:41:12 by wrikuto          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (n--)
 	{
 		if (str[i] == uc)
-			return ((void *)&s[i]);
+			return ((void *)&str[i]);
 		i++;
 	}
 	return (NULL);
