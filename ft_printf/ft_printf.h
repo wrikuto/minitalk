@@ -6,7 +6,7 @@
 /*   By: wrikuto <wrikuto@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/13 18:58:47 by wrikuto           #+#    #+#             */
-/*   Updated: 2023/06/22 18:06:30 by wrikuto          ###   ########.fr       */
+/*   Updated: 2023/08/25 16:24:08 by wrikuto          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include<stdarg.h>
 # include<stdint.h>
 # include<limits.h>
+# include <stdint.h>
 
 ssize_t	ft_print_c(char c);
 ssize_t	ft_print_s(char *input);
