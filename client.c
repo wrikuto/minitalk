@@ -6,7 +6,7 @@
 /*   By: wrikuto <wrikuto@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 12:30:53 by wrikuto           #+#    #+#             */
-/*   Updated: 2023/08/26 01:02:11 by wrikuto          ###   ########.fr       */
+/*   Updated: 2023/08/26 18:26:45 by wrikuto          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	send_signal(int pid, char *str)
 			else
 				kill(pid, SIGUSR2);
 			b_count++;
-			usleep(10);
+			usleep(50);
 		}
 		i++;
 		b_count = 0;
